@@ -7,8 +7,200 @@
     <link rel="stylesheet" href="src/output.css">
     <!-- npx tailwindcss -i ./CSS/Style.css -o ./src/output.css --watch -->
 </head>
-<body>
+<body class="p-0 m-0 box-border bg-gray-300">
+
+    <div class="grid grid-cols-grid1 h-screen">
+        <!-- le grid a gauche 1.5fr -->
+        <div class="bg-green-700 rounded-r-2xl text-slate-50 p-4">
+
+            <div class="flex justify-center">
+                <h1 class="text-2xl">MAURICE</h1>
+            </div>
+
+            <div class="">
+                <ul>
+                    <li class="p-2">Hopitaled</li>
+                    <li class="p-2">Dashboard</li>
+                    <li class="p-2">Dashboard</li>
+                    <li class="p-2">Dashboard</li>
+                    <li class="p-2">Dashboard</li>
+                    <li class="p-2">Dashboard</li>
+                    <li class="p-2">Dashboard</li>
+                    <li class="p-2">Dashboard</li>
+                    <li class="p-2">Dashboard</li>
+                    <li class="p-2">Dashboard</li>
+                    <li class="p-2">Dashboard</li>
+                    <li class="p-2">Dashboard</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- le grid a droite 5fr -->
+        <div class="p-4 ">
+
+            <!-- le menu en haut -->
+            <div class="flex">
+                <div class="">
+                    <input class="p-1 border-none rounded-full" type="search" name="" id="" placeholder="recherchez">
+                </div> 
+
+                <div class="flex justify-end w-full items-center">
+                    <div class="m-2 flex items-center">
+                        <button type="button">Dark</button>
+                        <box-icon name='chevron-down'></box-icon>
+                    </div>
+
+                    <div class="m-2">
+                        <box-icon name='bell'></box-icon>
+                    </div>
+
+                    <div class="flex items-center">
+                        <img class="h-10 w-10 rounded-full" src="igm/img1.jpg" alt="photo">
+                        <p class="ml-1">Dev maurcice</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <!-- le grid de milieu-->
+            <div class="grid grid-cols-gridinterne1 gap-2 mt-2">
+
+                <div class="bg-slate-50 rounded-xl row-span-2 px-4 py-2 transition-transform duration-500 ease-in-out transform hover:scale-110">
+                    <div class="">
+                        <h1 class="flex justify-center text-green-500">Today available</h1>
+                        <p class="flex justify-center text-gray-500">maurice miema le parfait </p>
+
+                        <div class="flex justify-center my-2">
+                            <img class="h-28 w-28 rounded-full" src="igm/img1.jpg" alt="">
+                        </div>
+
+                        <h1 class="flex justify-center text-green-500">Maurice</h1>
+                        <p class="flex justify-center text-gray-500">maurice miema le parfait </p>
+                    </div>
+                </div>
+
+
+                <div class="bg-slate-50 px-2 py-4 rounded-xl shadow  transition-transform duration-1000 ease-in-out transform hover:scale-110">
+                    <div class="flex items-center pb-4">
+                        <div class="w-1/2">
+                            <h1 class="text-green-500 text-2xl">40</h1>
+                            <p class="font-bold">en cours</p>
+                        </div>
+
+                        <div class="flex justify-end w-full pr-4">
+                            <ion-icon class="h-8 w-8 p-2 text-slate-50 rounded-full bg-green-600"  name="camera-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-500">maurice miema bope</p>
+                </div>
+
+                <div class="bg-slate-50 px-2 py-4 rounded-xl shadow  transition-transform duration-500 ease-in-out transform hover:scale-110">
+                    <div class="flex items-center pb-4">
+                        <div class="w-1/2">
+                            <h1 class="text-green-500 text-2xl">21</h1>
+                            <p class="text-gray-500">en cours</p>
+                        </div>
+
+                        <div class="flex justify-end w-full pr-4">
+                            <ion-icon class="h-8 w-8 p-2 text-slate-50 rounded-full bg-green-600" name="person-add-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-500">maurice miema bope</p>
+                </div>
+
+                <div class="bg-slate-50 px-2 py-4 rounded-xl shadow  transition-transform duration-500 ease-in-out transform hover:scale-110">
+                    <div class="flex items-center pb-4">
+                        <div class="w-1/2">
+                            <h1 class="text-green-500 text-2xl">14</h1>
+                            <p class="text-gray-500">en cours</p>
+                        </div>
+
+                        <div class="flex justify-end w-full pr-4">
+                            <ion-icon class="h-8 w-8 p-2 text-slate-50 rounded-full bg-green-600" name="hand-left-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-500">maurice miema bope</p>
+                </div>
+
+                <!-- multiple -->
+                <div class="bg-slate-50 px-2 py-4 rounded-xl shadow transition-transform duration-500 ease-in-out transform hover:scale-110">
+                    <div class="flex items-center pb-4">
+                        <div class="w-1/2">
+                            <h1 class="text-green-500 text-2xl">15</h1>
+                            <p class="text-gray-500">en cours</p>
+                        </div>
+
+                        <div class="flex justify-end w-full pr-4">
+                            <ion-icon class="h-8 w-8 p-2 text-slate-50 rounded-full bg-green-600" name="person-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-500">maurice miema bope</p>
+                </div>
+
+                <div class="bg-slate-50 px-2 py-4 rounded-xl shadow transition-transform duration-500 ease-in-out transform hover:scale-110">
+                    <div class="flex items-center pb-4">
+                        <div class="w-1/2">
+                            <h1 class="text-green-500 text-2xl">36</h1>
+                            <p class="text-gray-500">en cours</p>
+                        </div>
+
+                        <div class="flex justify-end w-full pr-4">
+                            <ion-icon class="h-8 w-8 p-2 text-slate-50 rounded-full bg-green-600" name="person-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-500">maurice miema bope</p>
+                </div>
+
+                <div class="bg-slate-50 px-2 py-4 rounded-xl shadow transition-transform duration-500 ease-in-out transform hover:scale-110">
+                    <div class="flex items-center pb-4">
+                        <div class="w-1/2">
+                            <h1 class="text-green-500 text-2xl">40</h1>
+                            <p class="text-gray-500">en cours</p>
+                        </div>
+
+                        <div class="flex justify-end w-full pr-4">
+                            <ion-icon class="h-8 w-8 p-2 text-slate-50 rounded-full bg-green-600" name="server-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-500">maurice miema bope</p>
+                </div>
+
+            </div>
+
+            <div class="grid grid-cols-chart  mt-4 gap-4">
+
+                <div class="bg-slate-50 rounded-xl p-2">
+                    <canvas id="myChart"></canvas>
+                </div>
+
+                <div class="bg-slate-50 rounded-xl p-2">
+
+                </div>
+            </div>
+
+            
+        </div>
+
+
+    </div>
     
     
+
+    <!-- le lien des icones  -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <!-- le lien des icones -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+    <!-- le lien de chart.js  -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+    <!-- le lien du fichier chart.js -->
+     <script src="chart.js"></script>
+
 </body>
 </html>
