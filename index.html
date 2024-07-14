@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboar 2</title>
     <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="icomoon/style.css">
     <!-- npx tailwindcss -i ./CSS/Style.css -o ./src/output.css --watch -->
 </head>
 <body class="p-0 m-0 box-border bg-gray-300">
 
     <div class="grid grid-cols-grid1 h-screen max-md:grid-cols-max-md-grid">
         <!-- le grid a gauche 1.5fr -->
-        <div class="bg-green-700 rounded-r-2xl text-slate-50 p-4 max-md:hidden">
+        <div class="bg-green-700 rounded-r-2xl text-slate-50 p-4  max-sm:absolute max-sm:z-50 max-sm:h-screen 
+                    max-sm:top-16 max-sm:w-full max-sm:rounded-xl max-sm:hidden  " id="menu">
 
             <div class="flex justify-center">
                 <h1 class="text-2xl">MAURICE</h1>
@@ -127,9 +129,23 @@
         <div class="p-4">
 
             <!-- le menu en haut -->
-            <div class="flex">
+            <div class="flex items-center">
+
+                <!-- l'icone menu -->
+
+                <div class="hidden max-sm:block mr-2" id="iconbtn">
+                    <i class="icon-navicon text-2xl " id="iconmenu"></i>
+                </div>
+                
+                <div class="hidden mr-2" id="menuclose">
+                    <i class="icon-times text-2xl" ></i>
+                </div>
+                
+
+                <!-- fin  -->
+
                 <div class="">
-                    <input class="p-1 border-none rounded-full" type="search" name="" id="" placeholder="recherchez">
+                    <input class="py-1 border-none rounded-full px-4" type="search" name="" id="" placeholder="recherchez">
                 </div> 
 
                 <div class="flex justify-end w-full items-center">
@@ -144,7 +160,7 @@
 
                     <div class="flex items-center">
                         <img class="h-10 w-10 rounded-full" src="igm/img1.jpg" alt="photo">
-                        <p class="ml-1">Dev maurcice</p>
+                        <p class="ml-1 max-sm:hidden">Dev maurcice</p>
                     </div>
                 </div>
             </div>

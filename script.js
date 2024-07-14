@@ -20,4 +20,25 @@ association.addEventListener('click', () => {
     }
 });
 
+// pour afficher le menu 
+
+const iconbtn = document.getElementById("iconbtn");
+const menu = document.getElementById("menu");
+const iconmenu = document.getElementById("iconmenu");
+const menuclose = document.getElementById("menuclose");
+
+iconbtn.addEventListener("click", function(){
+    menu.style.display = "block";
+    iconmenu.style.display = "none";
+    menuclose.style.display = "block";
+});
+
+menuclose.addEventListener("click", function(){
+    menu.style.display = "none";
+    iconmenu.style.display = "block";
+    menuclose.style.display = "none";
+});
+
+
+
 
